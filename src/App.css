@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+
+
+main {
+  
+  display: grid;
+  height: 100%;
+  /* background-color: purple; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .7fr 1fr 1fr;
+  grid-template-areas: 
+      "Header Header Header"
+      "Content . CTA"
+      "Footer Footer Footer";
+  background: linear-gradient( rgba(0, 0, 0, 0.041) 100%, rgba(0, 0, 0, 0.5)100%),url(./assets/sunflower.jpg) no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  grid-area: Header;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CTA {
+  grid-area: CTA;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.content {
+  grid-area: Content;
+}
+
+.Footer {
+  grid-area: Footer;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

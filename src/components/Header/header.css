@@ -1,0 +1,20 @@
+
+
+.nav--link__style {
+    font-size: 20px;
+    color: grey;
+    margin-right: 10px;
+}
+
+.nav--logo__style {
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.nav--horizontal {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 40px;
+}

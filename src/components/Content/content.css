@@ -1,0 +1,25 @@
+
+.content--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.content__title {
+    color:#B61515;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+.content--bullet__horizontal {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.content--bullet {
+    font-size: 40px;
+    margin:10px 0px 10px 0px;
+}
